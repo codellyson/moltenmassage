@@ -1,0 +1,147 @@
+<script>
+  import Hero from "../components/Hero.svelte";
+  const services = [
+    {
+      image: "images/massage.jpg",
+      name: "Body Shrub",
+      desc:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt odio necessitatibus blanditiis, beatae perspiciatis quo unde nemo, corrupti sit delectus sunt, quam dolore! Culpa magni temporibus quam, fugit similique labore.",
+      id: 1,
+    },
+    {
+      image: "images/massage2.jpg",
+      name: "Outer Home Services",
+      desc:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt odio necessitatibus blanditiis, beatae perspiciatis quo unde nemo, corrupti sit delectus sunt, quam dolore! Culpa magni temporibus quam, fugit similique labore.",
+      id: 2,
+    },
+    {
+      image: "images/testify-1.jpg",
+      name: "Santiosage",
+      desc:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt odio necessitatibus blanditiis, beatae perspiciatis quo unde nemo, corrupti sit delectus sunt, quam dolore! Culpa magni temporibus quam, fugit similique labore.",
+      id: 3,
+    },
+    {
+      image: "images/reflex.jpg",
+      name: "Reflexology",
+      desc:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt odio necessitatibus blanditiis, beatae perspiciatis quo unde nemo, corrupti sit delectus sunt, quam dolore! Culpa magni temporibus quam, fugit similique labore.",
+      id: 4,
+    },
+    {
+      image: "images/sitting-massage.jpg",
+      name: "Nutritional Consultation",
+      desc:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt odio necessitatibus blanditiis, beatae perspiciatis quo unde nemo, corrupti sit delectus sunt, quam dolore! Culpa magni temporibus quam, fugit similique labore.",
+      id: 5,
+    },
+    {
+      image: "images/personal-training.jpg",
+      name: "Personal Training",
+      desc:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt odio necessitatibus blanditiis, beatae perspiciatis quo unde nemo, corrupti sit delectus sunt, quam dolore! Culpa magni temporibus quam, fugit similique labore.",
+      id: 6,
+    },
+    {
+      image: "images/volleyball.jpg",
+      name: "Private Volleyball Lessons",
+      desc:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt odio necessitatibus blanditiis, beatae perspiciatis quo unde nemo, corrupti sit delectus sunt, quam dolore! Culpa magni temporibus quam, fugit similique labore.",
+      id: 7,
+    },
+    {
+      image: "images/smile-massage.png",
+      name: "Deep Massage",
+      desc:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt odio necessitatibus blanditiis, beatae perspiciatis quo unde nemo, corrupti sit delectus sunt, quam dolore! Culpa magni temporibus quam, fugit similique labore.",
+      id: 8,
+    },
+    {
+      image: "images/sitting-massage.jpg",
+      name: "Superficial Massage",
+      desc:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt odio necessitatibus blanditiis, beatae perspiciatis quo unde nemo, corrupti sit delectus sunt, quam dolore! Culpa magni temporibus quam, fugit similique labore.",
+      id: 9,
+    },
+    // {
+    //   image: "",
+    //   name: "In Home Massages",
+    //   desc:
+    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt odio necessitatibus blanditiis, beatae perspiciatis quo unde nemo, corrupti sit delectus sunt, quam dolore! Culpa magni temporibus quam, fugit similique labore.",
+    //   id: 10,
+    // },
+    // {
+    //   image: "images/sitting-massage.jpg",
+    //   name: "In Home Massages",
+    //   desc:
+    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt odio necessitatibus blanditiis, beatae perspiciatis quo unde nemo, corrupti sit delectus sunt, quam dolore! Culpa magni temporibus quam, fugit similique labore.",
+    //   id: 11,
+    // },
+    // {
+    //   image: "images/sitting-massage.jpg",
+    //   name: "In Home Massages",
+    //   desc:
+    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt odio necessitatibus blanditiis, beatae perspiciatis quo unde nemo, corrupti sit delectus sunt, quam dolore! Culpa magni temporibus quam, fugit similique labore.",
+    //   id: 12,
+    // },
+  ];
+</script>
+
+<style>
+  .service-block {
+    background-color: #fff;
+  }
+  .service-block .text {
+    text-align: center;
+    padding: 0 15px;
+  }
+  .service-block .text h3 {
+    font-size: 18px;
+  }
+  .services_294491 {
+    background: #ffa1881a;
+  }
+  #service {
+    padding: 8rem 0;
+  }
+</style>
+
+<Hero pageHeading="Our Service" />
+<!-- first -->
+<section id="service" class="bg-light">
+  <div class="site-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2
+            class="heading-border-bottom font-weight-bold serif text-black mb-5 text-center">
+            Our Services
+          </h2>
+        </div>
+      </div>
+      <div class="row" style="justify-content:center">
+        {#each services as service}
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-5">
+            <div class="service-block">
+              <!-- svelte-ignore a11y-img-redundant-alt -->
+              <!-- svelte-ignore a11y-invalid-attribute -->
+              <a
+                href="#"
+                class="mb-3 d-block"
+                style="display:block; height:200px; overflow:hidden;"><img
+                  src={service.image}
+                  alt="Image"
+                  class="img-fluid" /></a>
+              <div class="text">
+                <h3 class="mb-3">{service.name}</h3>
+                <p>{service.desc}</p>
+              </div>
+            </div>
+          </div>
+        {/each}
+      </div>
+    </div>
+  </div>
+  <!-- Third -->
+</section>

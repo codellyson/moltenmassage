@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Raleway&display=swap");
+body {
+  position: relative;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+.btn {
+  border-radius: 30px;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #ffa188;
+  border-color: #ffa188;
+}
+
+.btn-primary:hover {
+  background: #ff9375;
+  color: #fff;
+  border-color: #ffa188;
+}
+.text-primary {
+  color: #ff9375 !important;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  word-spacing: 3px;
+  font-weight: 900 !important;
+  line-height: 30px;
+}
+
+p {
+  /* font-family: "Roboto", serif; */
+  font-size: 15px;
+}
+a {
+  color: rgb(46, 45, 45);
+}
+
+/* BG IMAGES */
+.bg-image.overlay {
+  position: relative;
+}
+.bg-image.overlay:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  width: 100%;
+  background: #000000b3;
+}
+.bg-image > .container {
+  position: relative;
+  z-index: 1;
+}
+.bg-img-1 {
+  background-size: cover;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 350px;
+}
+
+.section-header-text {
+  letter-spacing: 3px;
+}
+.section-header-text::after {
+  display: block;
+  border-bottom: solid #ff9375 3px;
+  content: "";
+  width: 8%;
+  margin: 0.95rem auto;
+}
+.section-header-side::after {
+  display: block;
+  border-bottom: solid #ff9375 3px;
+  content: "";
+  width: 8%;
+  margin: 1rem 0;
+}
+
+.bg-primary {
+  background: #ff93754d !important;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+}
+
+.card {
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+  border-right: none;
+
+  border-radius: 0;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgb(157 161 175 / 15%);
+  margin-bottom: 1rem;
+}
+.card-header {
+  background: transparent;
+  border: none;
+  margin-bottom: -0.92rem;
+}
+#__lpform_name_icon,
+#__lpform_name {
+  display: none;
+}
