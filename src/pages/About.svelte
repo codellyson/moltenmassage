@@ -193,15 +193,17 @@
       <div class="row align-items-center">
         <div class="col-md-5 mr-auto mb-5">
           <h2 class="serif font-weight-bold mb-3">
-            WellSpa Spa &amp; Wellness
+            Molten Massage International
           </h2>
           <p class="font-weight-bold">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum,
-            consequuntur?
+            Our mission is to promote relaxation, stress relief, and a pain free
+            lifestyle though therapeutic massage and bodywork, while supporting
+            you in healing yourself holistically.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea
-            nesciunt, amet officia soluta, dolores dolor?
+            MMI's focus is to provide natural solutions to you the client, as
+            well as education that ultimately result in helping you realize
+            optimal, physical and physiological health and happiness.
           </p>
           <div class="social-icons py-4">
             <a href="#"><span class="icon-twitter" /></a>
@@ -232,6 +234,7 @@
             Gallery
           </h2>
         </div>
+        <p class="text-center">Have a look into our world</p>
       </div>
       <Gallery {gallery} />
     </div>
