@@ -13,29 +13,21 @@
 
   router("/", () => {
     currentPage = Home;
-    pageTitle = "Home";
-    // pageHeading = "Spa Which You Love";
   });
   router("/about", () => {
     {
       currentPage = About;
-      // pageTitle = "About";
-      // pageHeading = "About Us";
     }
   });
   router("/contact", () => {
     {
       currentPage = Contact;
-      // pageTitle = "Contact";
-      // pageHeading = "Contact Us";
     }
   });
   router("/service", () => {
     currentPage = Service;
-    // pageTitle = "Service";
-    // pageHeading = "Our Services";
   });
-  router.start();
+  router.start({ hashbang: true });
 </script>
 
 <style>
