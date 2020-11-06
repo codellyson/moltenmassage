@@ -230,12 +230,12 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h2 class="section-header-text text-black mb-5 text-center">
+          <h2 class="section-header-text text-black mb-2 text-center">
             Gallery
           </h2>
         </div>
-        <p class="text-center">Have a look into our world</p>
       </div>
+      <p class="text-center py-2">A look into what we do</p>
       <Gallery {gallery} />
     </div>
   </section>
