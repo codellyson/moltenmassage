@@ -1,9 +1,11 @@
 <script>
-  let showNav = false;
+  export let showNav = false;
 
   const toggleNav = () => {
     showNav === true ? (showNav = false) : (showNav = true);
   };
+  export const activeClass = false;
+  // console.log(active);
 </script>
 
 <style>

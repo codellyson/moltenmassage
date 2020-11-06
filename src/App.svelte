@@ -10,18 +10,22 @@
   let currentPage;
   let pageHeading;
   let pageTitle;
+  let active = false;
 
   router("/", () => {
     currentPage = Home;
+    active = true;
   });
   router("/about", () => {
     {
       currentPage = About;
+      active = true;
     }
   });
   router("/contact", () => {
     {
       currentPage = Contact;
+      active = true;
     }
   });
   router("/service", () => {
@@ -33,7 +37,7 @@
 <style>
 </style>
 
-<Navbar />
+<Navbar {active} />
 <main>
   <svelte:component this={currentPage} />
 </main>

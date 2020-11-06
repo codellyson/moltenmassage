@@ -49,8 +49,86 @@
       id: 6,
     },
   ];
+  const gallery = [
+    {
+      image: "images/founder.jpg",
+      caption: "caption here",
+      id: 1,
+    },
+    {
+      image: "images/volleyball.jpg",
+      caption: "caption here",
+      id: 2,
+    },
+    {
+      image: "images/leg-massage.jpg",
+      caption: "caption here",
+      id: 3,
+    },
+    {
+      image: "images/massage.jpg",
+      caption: "caption here",
+      id: 4,
+    },
+    {
+      image: "images/massage2.jpg",
+      caption: "caption here",
+      id: 5,
+    },
+    {
+      image: "images/indoor.jpg",
+      caption: "caption here",
+      id: 6,
+    },
+    {
+      image: "images/massage-dev.jpg",
+      caption: "caption here",
+      id: 7,
+    },
+    {
+      image: "images/plenty-people2.jpg",
+      caption: "caption here",
+      id: 8,
+    },
+    {
+      image: "images/reflex.jpg",
+      caption: "caption here",
+      id: 9,
+    },
+    {
+      image: "images/sitting-massage.jpg",
+      caption: "caption here",
+      id: 10,
+    },
+    {
+      image: "images/smile-massage.png",
+      caption: "caption here",
+      id: 11,
+    },
+    {
+      image: "images/testify-1.jpg",
+      caption: "caption here",
+      id: 12,
+    },
+    {
+      image: "images/press-phone.jpg",
+      caption: "caption here",
+      id: 13,
+    },
+    {
+      image: "images/regcenter.jpg",
+      caption: "caption here",
+      id: 14,
+    },
+    {
+      image: "images/ncaa.jpg",
+      caption: "caption here",
+      id: 15,
+    },
+  ];
   import Promo from "../components/CTA.svelte";
   import Hero from "../components/Hero.svelte";
+  import Gallery from "../components/Gallery.svelte";
 </script>
 
 <style>
@@ -145,37 +223,42 @@
       </div>
     </div>
   </div>
-
-  <!-- Side Two -->
-  <div class="site-section bg-light">
+  <!-- Gallery -->
+  <section id="gallery" class="py-5 my-5">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <h2 class="section-header-text text-black mb-5 text-center">
-            Our Team
+            Gallery
           </h2>
         </div>
       </div>
-      <div class="row align-items-stretch">
-        {#each teams as team}
-          <div class="col-lg-4 col-md-6 mb-5">
-            <div
-              class="post-entry-1 h-100 person-1 aos-init aos-animate"
-              data-aos="fade-up"
-              data-aos-delay="{team.id}00">
-              <!-- svelte-ignore a11y-img-redundant-alt -->
-              <img src={team.image} alt="Image" class="img-fluid" />
-              <div class="post-entry-1-contents ">
-                <span class="meta">{team.post}</span>
-                <h2>{team.name}</h2>
-                <p>{team.desc}</p>
-              </div>
+      <Gallery {gallery} />
+    </div>
+  </section>
+
+  <!-- Side Two -->
+  <div class="site-section bg-light">
+    <div class="row align-items-stretch">
+      {#each teams as team}
+        <div class="col-lg-4 col-md-6 mb-5">
+          <div
+            class="post-entry-1 h-100 person-1 aos-init aos-animate"
+            data-aos="fade-up"
+            data-aos-delay="{team.id}00">
+            <!-- svelte-ignore a11y-img-redundant-alt -->
+            <img src={team.image} alt="Image" class="img-fluid" />
+            <div class="post-entry-1-contents ">
+              <span class="meta">{team.post}</span>
+              <h2>{team.name}</h2>
+              <p>{team.desc}</p>
             </div>
           </div>
-        {/each}
-      </div>
+        </div>
+      {/each}
     </div>
   </div>
+
   <!-- Three -->
   <div class="site-section">
     <div class="container">
@@ -183,7 +266,7 @@
         <div class="col-lg-6 mb-5 mb-lg-0">
           <div
             class="img-years aos-init aos-animate"
-            data-aos="fade-left"
+            data-aos="fade-up"
             data-aos-delay="400">
             <!-- svelte-ignore a11y-img-redundant-alt -->
             <img src="images/green-plant.jpg" alt="Image" class="img-fluid" />
@@ -191,18 +274,18 @@
         </div>
         <div
           class="col-lg-5 ml-auto pl-lg-5 text-center aos-init aos-animate"
-          data-aos="fade-right"
+          data-aos="fade-down"
           data-aos-delay="400">
           <h2
             class="heading-border-bottom font-weight-bold serif text-black mb-5 text-center">
             Why Us
           </h2>
           <p class="mb-5 lead">
-            We offer unique service and we also priotize our customers
+            We offer unique services and we also priotize our customers
             comfortability and satisfaction, We believe you deserve the best.
           </p>
           <!-- svelte-ignore a11y-invalid-attribute -->
-          <p><a href="#" class="btn btn-primary">Learn More</a></p>
+          <p><a href="/service" class="btn btn-primary">Learn More</a></p>
         </div>
       </div>
     </div>
