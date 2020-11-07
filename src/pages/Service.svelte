@@ -86,6 +86,8 @@
     //   id: 12,
     // },
   ];
+  let pageIntro =
+    "Our mission is to promote relaxation, stress relief, and a pain free lifestyle though therapeutic massage and bodywork, while supporting you in healing yourself holistically.";
 </script>
 
 <style>
@@ -99,15 +101,16 @@
   .service-block .text h3 {
     font-size: 18px;
   }
-  .services_294491 {
-    background: #ffa1881a;
-  }
+
   #service {
     padding: 8rem 0;
   }
 </style>
 
-<Hero pageHeading="Our Service" />
+<svelte:head>
+  <title>Service</title>
+</svelte:head>
+<Hero pageHeading="Our Service" {pageIntro} />
 <!-- first -->
 <section id="service" class="bg-light">
   <div class="site-section">

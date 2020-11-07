@@ -129,6 +129,8 @@
   import Promo from "../components/CTA.svelte";
   import Hero from "../components/Hero.svelte";
   import Gallery from "../components/Gallery.svelte";
+  let pageIntro =
+    "Our mission is to promote relaxation, stress relief, and a pain free lifestyle though therapeutic massage and bodywork, while supporting you in healing yourself holistically.";
 </script>
 
 <style>
@@ -185,7 +187,10 @@
   }
 </style>
 
-<Hero pageHeading="About Us" />
+<svelte:head>
+  <title>About</title>
+</svelte:head>
+<Hero pageHeading="About Us" {pageIntro} />
 <section id="about">
   <div class="site-section py-5 my-5">
     <h1 class="section-header-text text-center py-3">About Us</h1>

@@ -177,6 +177,8 @@
   ];
   import CTA from "../components/CTA.svelte";
   import Hero from "../components/Hero.svelte";
+  let pageIntro =
+    "Our mission is to promote relaxation, stress relief, and a pain free lifestyle though therapeutic massage and bodywork, while supporting you in healing yourself holistically.";
 </script>
 
 <style>
@@ -242,7 +244,11 @@
   }
 </style>
 
-<Hero pageHeading="Welcome to Molten Massage International" />
+<svelte:head>
+  <title>Home</title>
+</svelte:head>
+
+<Hero pageHeading="Welcome to Molten Massage International" {pageIntro} />
 <div class="container whatwedo py-5 my-5">
   <h1 class="text-center py-3 section-header-text">What we do</h1>
   <h4 class="text-center mb-5" data-aos="fade-up" data-aos-delay="100">

@@ -1,5 +1,7 @@
 <script>
   import Hero from "../components/Hero.svelte";
+  let pageIntro =
+    "Our mission is to promote relaxation, stress relief, and a pain free lifestyle though therapeutic massage and bodywork, while supporting you in healing yourself holistically.";
 </script>
 
 <style>
@@ -31,7 +33,10 @@
   /* .contact-icon . */
 </style>
 
-<Hero pageHeading="Contact Us" />
+<svelte:head>
+  <title>Contact</title>
+</svelte:head>
+<Hero pageHeading="Contact Us" {pageIntro} />
 <section id="contact" class="contact section-bg bg-light ">
   <div class="container ">
     <div class="section-title mb-5">

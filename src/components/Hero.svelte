@@ -1,5 +1,6 @@
 <script>
   export let pageHeading;
+  export let pageIntro;
 </script>
 
 <style>
@@ -51,12 +52,8 @@
       <div class="row align-items-center">
         <div class="col-md-7">
           <h1 class="mb-3">{pageHeading}</h1>
-          <p class="py-3">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-            veritatis in tenetur doloremque, maiores doloribus officia iste.
-            Dolores.
-          </p>
-          <p><a href="#" class="btn btn-primary">Learn More</a></p>
+          <p class="py-3">{pageIntro}</p>
+          <p><a href="/about" class="btn btn-primary">Learn More</a></p>
         </div>
       </div>
     </div>

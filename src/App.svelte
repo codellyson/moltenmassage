@@ -8,36 +8,37 @@
   import router from "page";
 
   let currentPage;
-  let pageHeading;
-  let pageTitle;
-  let active = false;
-
+  let segment;
   router("/", () => {
     currentPage = Home;
-    active = true;
+    segment = undefined;
   });
   router("/about", () => {
     {
       currentPage = About;
-      active = true;
+      segment = "about";
     }
   });
   router("/contact", () => {
     {
       currentPage = Contact;
-      active = true;
+      segment = "contact";
     }
   });
   router("/service", () => {
     currentPage = Service;
+    segment = "service";
   });
   router.start({ hashbang: true });
 </script>
 
 <style>
+  main {
+    overflow: hidden;
+  }
 </style>
 
-<Navbar {active} />
+<Navbar {segment} />
 <main>
   <svelte:component this={currentPage} />
 </main>

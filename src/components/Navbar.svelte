@@ -6,6 +6,7 @@
   };
   export const activeClass = false;
   // console.log(active);
+  export let segment;
 </script>
 
 <style>
@@ -72,6 +73,9 @@
   .mobile-nav ul li a:hover {
     color: #fa7a56 !important;
   }
+  a.current {
+    color: #fa7a56 !important;
+  }
   .mobile-nav.showNav {
     visibility: visible;
     z-index: 9999999;
@@ -89,9 +93,9 @@
   .cancel {
     width: 34px;
     float: right;
-    margin: 2rem;
-    font-size: 2.3rem;
-    font-weight: bolder;
+    margin: 1rem;
+    font-size: 2.9rem;
+    font-weight: 800;
   }
   @media (max-width: 990px) {
     .mobile-nav-toggler {
@@ -106,7 +110,7 @@
 <header id="header">
   <div class="container">
     <nav class="navbar navbar-expand-lg ">
-      <a class="navbar-brand" href="#home">M.M</a>
+      <a class="navbar-brand" href="/">M.M</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -118,24 +122,43 @@
         <span class="navbar-toggler-icon" />
       </button>
       <div class="mobile-nav-toggler">
-        <svg viewBox="0 0 100 80" width="40" height="25" on:click={toggleNav}>
-          <rect width="100" height="15" rx="8" />
-          <rect y="30" width="100" height="15" rx="8" />
-          <rect y="60" width="100" height="15" rx="8" />
+        <svg viewBox="0 0 100 80" width="40" height="22" on:click={toggleNav}>
+          <rect width="100" height="10" rx="8" />
+          <rect y="30" width="90" height="10" rx="8" />
+          <rect y="60" width="85" height="10" rx="8" />
         </svg>
       </div>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a href="/" class="nav-link" on:click={toggleNav}> Home</a>
+            <a
+              href="/"
+              class="nav-link"
+              on:click={toggleNav}
+              class:current={segment === undefined}>
+              Home</a>
           </li>
-          <li class="nav-item"><a href="/about" class="nav-link"> About</a></li>
           <li class="nav-item">
-            <a href="/service" class="nav-link"> Service</a>
+            <a
+              href="/about"
+              class="nav-link"
+              class:current={segment === 'about'}>
+              About</a>
           </li>
           <li class="nav-item">
-            <a href="/contact" class="nav-link"> Contact</a>
+            <a
+              href="/service"
+              class="nav-link"
+              class:current={segment === 'service'}>
+              Service</a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="/contact"
+              class="nav-link"
+              class:current={segment === 'contact'}>
+              Contact</a>
           </li>
         </ul>
       </div>
@@ -146,20 +169,33 @@
             class="nav-item active"
             data-aos="fade-left"
             data-aos-duration="500">
-            <a href="/" class="nav-link"> Home</a>
+            <a href="/" class="nav-link" class:current={segment === undefined}>
+              Home</a>
           </li>
           <li
             class="nav-item"
             data-aos="fade-left"
             data-aos-anchor="#example-anchor2"
             data-aos-duration="900">
-            <a href="/about" class="nav-link"> About</a>
+            <a
+              href="/about"
+              class="nav-link"
+              class:current={segment === 'about'}>
+              About</a>
           </li>
           <li class="nav-item" data-aos="fade-left" data-aos-duration="1000">
-            <a href="/service" class="nav-link"> Service</a>
+            <a
+              href="/service"
+              class="nav-link"
+              class:current={segment === 'service'}>
+              Service</a>
           </li>
           <li class="nav-item" data-aos="fade-left" data-aos-duration="1200">
-            <a href="/contact" class="nav-link"> Contact</a>
+            <a
+              href="/contact"
+              class="nav-link"
+              class:current={segment === 'contact'}>
+              Contact</a>
           </li>
         </ul>
       </div>
