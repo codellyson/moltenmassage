@@ -5,6 +5,7 @@
   import Service from "./pages/Service.svelte";
   import Contact from "./pages/Contact.svelte";
   import Footer from "./components/Footer.svelte";
+  import Spinner from "./components/Spinner.svelte";
   import router from "page";
 
   let currentPage;
@@ -40,6 +41,7 @@
 
 <Navbar {segment} />
 <main>
+  <Spinner loading="true" />
   <svelte:component this={currentPage} />
 </main>
 <Footer />

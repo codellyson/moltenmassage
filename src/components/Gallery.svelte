@@ -2,7 +2,7 @@
   export let gallery;
 </script>
 
-<div class="container">
+<div class="container-fluid">
   <div class="imglist row no-gutters" style="">
     {#each gallery as photo}
       <div class="col-lg-3 col-md-3 ">
@@ -15,7 +15,7 @@
             <img
               src={photo.image}
               class="aos-init aos-animate"
-              style="height:300px; width:100%;"
+              style="height:400px; width:100%;"
               data-aos="fade-up"
               data-aos-delay="{photo.id}00" />
           </a>

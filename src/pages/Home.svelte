@@ -221,8 +221,11 @@
   .testimonial-2 {
     background: #fff;
     padding: 30px;
-    border-left: solid 3px #ffa188;
+    border-left: solid 5px #ffa188;
+    border-radius: 5px;
     box-shadow: 0px 0px 30px rgb(157 161 175 / 15%);
+    font-family: "Open Sans", sans-serif;
+    line-height: 25px;
   }
   .testimonial-2 .v-card img {
     width: 50px;
@@ -238,6 +241,7 @@
   }
   #carousel {
     padding: 4rem 0;
+    background-color: transparent;
   }
   .card {
     background: #ffa1884d;

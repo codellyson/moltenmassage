@@ -158,26 +158,30 @@
   .icon-twitter:before {
     content: "\f099";
   }
-  .post-entry-1.person-1 .post-entry-1-contents {
+  .team_card.person-1 .team_card-contents {
     padding-top: 4rem;
   }
-  .post-entry-1 .post-entry-1-contents {
-    background: #fff;
+  .team_card .team_card-contents {
+    background: #ffa288;
+    color: #fff;
     padding: 20px;
   }
-  .post-entry-1.person-1 {
+  .team_card.person-1 {
     text-align: center;
   }
-  .post-entry-1.person-1 img {
+  .team_card.person-1 img {
     width: 90px;
     border-radius: 50%;
     margin: 0 auto -45px auto;
     border: 10px solid #fff;
   }
-  .post-entry-1 .meta {
-    color: #ccc;
+  .team_card .meta {
+    color: #ffa288;
+    background: #fff;
+    padding: 0.5rem;
+    border-radius: 8px;
   }
-  .post-entry-1 .post-entry-1-contents h2 {
+  .team_card .team_card-contents h2 {
     font-size: 22px;
     margin-bottom: 20px;
   }
@@ -232,7 +236,7 @@
   </div>
   <!-- Gallery -->
   <section id="gallery" class="py-5 my-5">
-    <div class="container">
+    <div class="">
       <div class="row">
         <div class="col-12">
           <h2 class="section-header-text text-black mb-2 text-center">
@@ -247,23 +251,25 @@
 
   <!-- Side Two -->
   <div class="site-section bg-light">
-    <div class="row align-items-stretch">
-      {#each teams as team}
-        <div class="col-lg-4 col-md-6 mb-5">
-          <div
-            class="post-entry-1 h-100 person-1 aos-init aos-animate"
-            data-aos="fade-up"
-            data-aos-delay="{team.id}00">
-            <!-- svelte-ignore a11y-img-redundant-alt -->
-            <img src={team.image} alt="Image" class="img-fluid" />
-            <div class="post-entry-1-contents ">
-              <span class="meta">{team.post}</span>
-              <h2>{team.name}</h2>
-              <p>{team.desc}</p>
+    <div class="container">
+      <div class="row align-items-stretch">
+        {#each teams as team}
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div
+              class="team_card h-100 person-1 aos-init aos-animate"
+              data-aos="fade-up"
+              data-aos-delay="{team.id}00">
+              <!-- svelte-ignore a11y-img-redundant-alt -->
+              <img src={team.image} alt="Image" class="img-fluid" />
+              <div class="team_card-contents ">
+                <span class="meta">{team.post}</span>
+                <h2 class="my-2">{team.name}</h2>
+                <p>{team.desc}</p>
+              </div>
             </div>
           </div>
-        </div>
-      {/each}
+        {/each}
+      </div>
     </div>
   </div>
 

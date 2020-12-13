@@ -8,7 +8,7 @@
     background-position: 50% 50%;
   }
   .site-section-cover h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #fff;
     line-height: 1;
     font-family: "Playfair Display", serif;
@@ -17,6 +17,7 @@
   .site-section-cover p {
     font-size: 18px;
     color: #fff;
+    font-family: "Open Sans", serif;
   }
   .site-section-cover.overlay {
     position: relative;
@@ -40,6 +41,11 @@
     bottom: 0;
     background: #00000071;
     z-index: 1;
+  }
+  @media (min-width: 768px) {
+    .site-section-cover h1 {
+      font-size: 3rem;
+    }
   }
 </style>
 

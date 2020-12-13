@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@400;600;700&family=Raleway&display=swap");
 body {
   position: relative;
   font-family: "Playfair Display", sans-serif;
@@ -38,6 +38,7 @@ h3 {
 
 p {
   /* font-family: "Roboto", serif; */
+  font-family: "Open Sans", serif;
   font-size: 15px;
 }
 a {

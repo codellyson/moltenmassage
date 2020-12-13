@@ -21,6 +21,7 @@
   }
   .site-footer a {
     color: #ffffffec;
+    font-family: "Open Sans", sans-serif;
   }
   .site-footer a:hover {
     color: #ffa288;

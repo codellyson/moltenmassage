@@ -3,6 +3,7 @@
 
   const toggleNav = () => {
     showNav === true ? (showNav = false) : (showNav = true);
+    // showNav === true ? (showNav = false) : (showNav = true);
   };
   export const activeClass = false;
   // console.log(active);
@@ -28,7 +29,7 @@
   }
 
   .nav-link {
-    font-family: "Roboto";
+    font-family: "Open Sans", sans-serif;
     color: #ffffff;
   }
   .nav-link:hover {
@@ -43,13 +44,12 @@
   .mobile-nav {
     position: fixed;
     height: 100vh;
-    background: #ffa288fb;
+    background: #000000;
     z-index: -9999999;
     width: 100%;
     visibility: hidden;
     right: 0;
     height: 89.5vh;
-
     top: 0;
   }
   .mobile-nav ul {
@@ -67,7 +67,7 @@
     width: 100%;
   }
   .mobile-nav ul li a {
-    font-family: "Playfair Design";
+    font-family: "Open Sans", sans-serif;
   }
 
   .mobile-nav ul li a:hover {
@@ -89,6 +89,9 @@
   .mobile-nav-toggler svg {
     fill: #fff;
   }
+  svg {
+    color: #fff;
+  }
 
   .cancel {
     width: 34px;
@@ -105,12 +108,27 @@
       display: initial;
     }
   }
+  /* Special style for navbar misbehaviour */
+  .navbar-brand {
+    width: 50%;
+  }
+  @media (min-width: 768px) {
+    .navbar-brand {
+      width: 25%;
+    }
+    .site-section-cover h1 {
+      font-size: 3rem;
+    }
+  }
 </style>
 
 <header id="header">
   <div class="container">
     <nav class="navbar navbar-expand-lg ">
-      <a class="navbar-brand" href="/">M.M</a>
+      <a class="navbar-brand" href="/"><img
+          src="images/moltenmassage.png"
+          style="width:100%;"
+          alt="" /></a>
       <button
         class="navbar-toggler"
         type="button"
@@ -123,20 +141,16 @@
       </button>
       <div class="mobile-nav-toggler">
         <svg viewBox="0 0 100 80" width="40" height="22" on:click={toggleNav}>
-          <rect width="100" height="10" rx="8" />
-          <rect y="30" width="90" height="10" rx="8" />
-          <rect y="60" width="85" height="10" rx="8" />
+          <rect width="80" height="10" rx="8" />
+          <rect y="30" width="70" height="10" rx="8" />
+          <rect y="60" width="65" height="10" rx="8" />
         </svg>
       </div>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a
-              href="/"
-              class="nav-link"
-              on:click={toggleNav}
-              class:current={segment === undefined}>
+            <a href="/" class="nav-link" class:current={segment === undefined}>
               Home</a>
           </li>
           <li class="nav-item">
@@ -163,7 +177,18 @@
         </ul>
       </div>
       <div class="mobile-nav" class:showNav id="navbarSupportedContent">
-        <div class="cancel" on:click={toggleNav}>&times;</div>
+        <div class="cancel" on:click={toggleNav}>
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"><path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M6 18L18 6M6 6l12 12" /></svg>
+        </div>
         <ul class="mobile-nav-menu ml-auto">
           <li
             class="nav-item active"
