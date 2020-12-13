@@ -3,7 +3,7 @@
     import { onMount } from "svelte";
     setTimeout(() => {
         loading = false;
-    }, 600);
+    }, 6000);
 </script>
 
 <style>
