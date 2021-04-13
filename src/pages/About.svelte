@@ -181,6 +181,7 @@
     padding: 0.5rem;
     border-radius: 8px;
   }
+
   .team_card .team_card-contents h2 {
     font-size: 22px;
     margin-bottom: 20px;
@@ -252,6 +253,13 @@
   <!-- Side Two -->
   <div class="site-section bg-light">
     <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="section-header-text text-black mb-2 text-center">
+            Our Team
+          </h2>
+        </div>
+      </div>
       <div class="row align-items-stretch">
         {#each teams as team}
           <div class="col-lg-4 col-md-6 mb-5">
