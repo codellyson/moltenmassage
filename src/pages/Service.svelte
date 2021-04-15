@@ -5,89 +5,68 @@
       image: "images/massage.jpg",
       name: "Body Shrub",
       desc:
-        "Our mission is to promote relaxation, stress relief, and a pain free lifestyle though therapeutic massage and bodywork, while supporting you in healing yourself holistically.",
+        "Our mission is to promote relaxation, stress relief, and a pain free lifestyle through therapeutic massage and bodywork, while supporting you in healing yourself holistically.",
       id: 1,
     },
     {
       image: "images/massage2.jpg",
       name: "Outer Home Services",
       desc:
-        "Our mission is to promote relaxation, stress relief, and a pain free lifestyle though therapeutic massage and bodywork, while supporting you in healing yourself holistically.",
+        "Our mission is to promote relaxation, stress relief, and a pain free lifestyle through therapeutic massage and bodywork, while supporting you in healing yourself holistically.",
       id: 2,
     },
     {
       image: "images/testify-1.jpg",
       name: "Santiosage",
       desc:
-        "Our mission is to promote relaxation, stress relief, and a pain free lifestyle though therapeutic massage and bodywork, while supporting you in healing yourself holistically.",
+        "Our mission is to promote relaxation, stress relief, and a pain free lifestyle through therapeutic massage and bodywork, while supporting you in healing yourself holistically.",
       id: 3,
     },
     {
       image: "images/reflex.jpg",
       name: "Reflexology",
       desc:
-        "Our mission is to promote relaxation, stress relief, and a pain free lifestyle though therapeutic massage and bodywork, while supporting you in healing yourself holistically.",
+        "Our mission is to promote relaxation, stress relief, and a pain free lifestyle through therapeutic massage and bodywork, while supporting you in healing yourself holistically.",
       id: 4,
     },
     {
       image: "images/sitting-massage.jpg",
       name: "Nutritional Consultation",
       desc:
-        "Our mission is to promote relaxation, stress relief, and a pain free lifestyle though therapeutic massage and bodywork, while supporting you in healing yourself holistically.",
+        "Our mission is to promote relaxation, stress relief, and a pain free lifestyle through therapeutic massage and bodywork, while supporting you in healing yourself holistically.",
       id: 5,
     },
     {
       image: "images/personal-training.jpg",
       name: "Personal Training",
       desc:
-        "Our mission is to promote relaxation, stress relief, and a pain free lifestyle though therapeutic massage and bodywork, while supporting you in healing yourself holistically.",
+        "Our mission is to promote relaxation, stress relief, and a pain free lifestyle through therapeutic massage and bodywork, while supporting you in healing yourself holistically.",
       id: 6,
     },
     {
       image: "images/volleyball.jpg",
       name: "Private Volleyball Lessons",
       desc:
-        "Our mission is to promote relaxation, stress relief, and a pain free lifestyle though therapeutic massage and bodywork, while supporting you in healing yourself holistically.",
+        "Our mission is to promote relaxation, stress relief, and a pain free lifestyle through therapeutic massage and bodywork, while supporting you in healing yourself holistically.",
       id: 7,
     },
     {
       image: "images/smile-massage.png",
       name: "Deep Massage",
       desc:
-        "Our mission is to promote relaxation, stress relief, and a pain free lifestyle though therapeutic massage and bodywork, while supporting you in healing yourself holistically.",
+        "Our mission is to promote relaxation, stress relief, and a pain free lifestyle through therapeutic massage and bodywork, while supporting you in healing yourself holistically.",
       id: 8,
     },
     {
       image: "images/sitting-massage.jpg",
       name: "Superficial Massage",
       desc:
-        "Our mission is to promote relaxation, stress relief, and a pain free lifestyle though therapeutic massage and bodywork, while supporting you in healing yourself holistically.",
+        "Our mission is to promote relaxation, stress relief, and a pain free lifestyle through therapeutic massage and bodywork, while supporting you in healing yourself holistically.",
       id: 9,
     },
-    // {
-    //   image: "",
-    //   name: "In Home Massages",
-    //   desc:
-    //     "Our mission is to promote relaxation, stress relief, and a pain free lifestyle though therapeutic massage and bodywork, while supporting you in healing yourself holistically.",
-    //   id: 10,
-    // },
-    // {
-    //   image: "images/sitting-massage.jpg",
-    //   name: "In Home Massages",
-    //   desc:
-    //     "Our mission is to promote relaxation, stress relief, and a pain free lifestyle though therapeutic massage and bodywork, while supporting you in healing yourself holistically.",
-    //   id: 11,
-    // },
-    // {
-    //   image: "images/sitting-massage.jpg",
-    //   name: "In Home Massages",
-    //   desc:
-    //     "Our mission is to promote relaxation, stress relief, and a pain free lifestyle though therapeutic massage and bodywork, while supporting you in healing yourself holistically.",
-    //   id: 12,
-    // },
   ];
   let pageIntro =
-    "Our mission is to promote relaxation, stress relief, and a pain free lifestyle though therapeutic massage and bodywork, while supporting you in healing yourself holistically.";
+    "Our mission is to promote relaxation, stress relief, and a pain free lifestyle through therapeutic massage and bodywork, while supporting you in healing yourself holistically.";
 </script>
 
 <svelte:head>
