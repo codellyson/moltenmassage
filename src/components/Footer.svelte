@@ -20,7 +20,7 @@
       <div class="col-12">
         <div class="social white text-center">
           <a href="#"><span class="icon-twitter" /></a>
-          <a href="https://www.instagram/buckleballa41"
+          <a href="https://www.instagram.com/buckleballa41"
             ><span class="icon-instagram" /></a
           >
           <a href="#"><span class="icon-facebook" /></a>
